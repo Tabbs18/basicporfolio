@@ -16,6 +16,10 @@ body {
     box-sizing: border-box;
 }
 
+input, textarea{
+    font-family: 'EB Garamond', serif;
+}
+
 .container {
     width: 100%;
     max-width: 960px;
@@ -32,6 +36,7 @@ img {
     width: 250px;
     height: 200px;
     padding-left: 25px;
+    border-image: 2px, dotted;
 }
 h1,
 h2,
