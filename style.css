@@ -16,7 +16,7 @@ body {
     box-sizing: border-box;
 }
 
-input, textarea{
+.name{
     font-family: 'EB Garamond', serif;
 }
 
@@ -33,11 +33,29 @@ p{
 }
 
 img {
-    width: 250px;
+  
     height: 200px;
     padding-left: 25px;
-    border-image: 2px, dotted;
 }
+
+.work:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
 h1,
 h2,
 h3,
@@ -111,10 +129,15 @@ nav a {
     color: #999;
     text-decoration: none;
     border-left: 1px solid #efefef;
+    text-transform: uppercase;
 }
 
 nav a:first-child {
     border-left: 0 none;
+}
+
+nav a:hover{
+    color: #4aaaa5;
 }
 
 footer {
@@ -221,3 +244,20 @@ input[type=submit]{
     margin-top: 10px;
     margin-right: 25px;
 }   
+
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #70ca73;
+    color: white;
+  }
